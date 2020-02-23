@@ -1,0 +1,501 @@
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile not available. Using 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0\AutoGenKeys\S-1-5-82-3006700770-424185619-1745488364-794895919-4004696415\DataProtection' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Production
+Content root path: D:\Projects\????
+Now listening on: http://127.0.0.1:39392
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 DEBUG http://localhost/  0
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 65.5932ms 200 
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.Index (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.Index (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 1.6851ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 142.6515ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.Index (SignalR_Vuejs__Demo) in 187.2262ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 748.8323ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/Scripts/axios.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/img/Group 6.svg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/signalr.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/img/Vector-1.svg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/Styles/StyleSheet.min.css  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/img/Vector-1.svg'. Physical path: 'D:\Projects\????\wwwroot\img\Vector-1.svg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Scripts/axios.min.js'. Physical path: 'D:\Projects\????\wwwroot\Scripts\axios.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 33.4326ms 200 image/svg+xml
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 48.8832ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/Scripts/lodash.min.js  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Styles/StyleSheet.min.css'. Physical path: 'D:\Projects\????\wwwroot\Styles\StyleSheet.min.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 50.1062ms 200 text/css
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/Scripts/vue.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/img/Vector.svg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/img/Group 6.svg'. Physical path: 'D:\Projects\????\wwwroot\img\Group 6.svg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/signalr.js'. Physical path: 'D:\Projects\????\wwwroot\signalr.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Scripts/lodash.min.js'. Physical path: 'D:\Projects\????\wwwroot\Scripts\lodash.min.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/img/Vector.svg'. Physical path: 'D:\Projects\????\wwwroot\img\Vector.svg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Scripts/vue.js'. Physical path: 'D:\Projects\????\wwwroot\Scripts\vue.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 203.9299ms 200 image/svg+xml
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 206.359ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 151.2652ms 200 image/svg+xml
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 202.062ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 253.3366ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=06.02.2020  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetWindows?date=4.02.2020  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=05.02.2020  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost/chatHub/negotiate text/plain;charset=UTF-8 0
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=04.02.2020  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetWindows", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult GetWindows(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetWindows (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 273.2332ms 200 application/json
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=03.02.2020  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 688.4585ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 835.8515ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 836.6416ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 850.6812ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 920.5155ms
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 912.8697ms
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 972.9385ms
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 727.736ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1043.9388ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1031.4886ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 759.3859ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1044.3766ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=07.02.2020  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=08.02.2020  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 33.8012ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 41.3548ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 58.2393ms
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 72.2441ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/chatHub?id=93ccw5KpneF-cEcQHTOMRA  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 88.1744ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 91.6566ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/favicon.ico  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=09.02.2020  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 14.9776ms 404 
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 2.0508ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 23.6512ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 49.7651ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetWindows (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.JsonResult in 1188.4182ms.
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[SignalR_Vuejs__Demo.Models.ParseJson, SignalR_Vuejs__Demo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetWindows (SignalR_Vuejs__Demo) in 1275.47ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 1399.8684ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/signalr.js.map  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/Scripts/axios.min.map  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 10.367ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 20.1027ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.Index (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.Index (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.223ms.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[1]
+      Executing ViewResult, running view Index.
+info: Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor[4]
+      Executed ViewResult - view Index executed in 4.4841ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.Index (SignalR_Vuejs__Demo) in 28.5872ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 45.3644ms 200 text/html; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/Styles/StyleSheet.min.css  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/img/Group 6.svg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/Scripts/lodash.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/signalr.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/Scripts/axios.min.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/img/Vector-1.svg  
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Styles/StyleSheet.min.css'. Physical path: 'D:\Projects\????\wwwroot\Styles\StyleSheet.min.css'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 84.8044ms 200 text/css
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/img/Vector-1.svg'. Physical path: 'D:\Projects\????\wwwroot\img\Vector-1.svg'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Scripts/axios.min.js'. Physical path: 'D:\Projects\????\wwwroot\Scripts\axios.min.js'
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Scripts/lodash.min.js'. Physical path: 'D:\Projects\????\wwwroot\Scripts\lodash.min.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 87.9894ms 200 image/svg+xml
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 129.0483ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/img/Group 6.svg'. Physical path: 'D:\Projects\????\wwwroot\img\Group 6.svg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/Scripts/vue.js  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/img/Vector.svg  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 147.2742ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/img/Vector.svg'. Physical path: 'D:\Projects\????\wwwroot\img\Vector.svg'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 198.8067ms 200 image/svg+xml
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 94.5299ms 200 image/svg+xml
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/signalr.js'. Physical path: 'D:\Projects\????\wwwroot\signalr.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 332.806ms 200 application/javascript
+info: Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware[2]
+      Sending file. Request path: '/Scripts/vue.js'. Physical path: 'D:\Projects\????\wwwroot\Scripts\vue.js'
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 266.2988ms 200 application/javascript
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/signalr.js.map  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/Scripts/axios.min.map  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 31.638ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 38.6374ms 404 
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost/chatHub/negotiate text/plain;charset=UTF-8 0
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=04.02.2020  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=05.02.2020  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=06.02.2020  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 33.7686ms 200 application/json
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=03.02.2020  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 40.2252ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 34.4816ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 84.3248ms
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 136.2409ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 77.928ms
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 49.4528ms.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 116.1196ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetWindows?date=4.02.2020  
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetWindows", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult GetWindows(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 39.8131ms.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 145.0915ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=07.02.2020  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetWindows (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 199.9289ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=08.02.2020  
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 103.248ms
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 229.5385ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 15.4528ms.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetDay?date=09.02.2020  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 45.6025ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 73.5532ms
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 94.2572ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 98.399ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 123.3782ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/chatHub?id=cUaBsaTFLGZz_QyGvngn0g  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetDay", controller = "Home"}. Executing controller action with signature System.String GetDay(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5.4112ms.
+info: Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor[1]
+      Executing ObjectResult, writing value of type 'System.String'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetDay (SignalR_Vuejs__Demo) in 36.351ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 144.5568ms 200 text/plain; charset=utf-8
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetWindows (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.JsonResult in 282.943ms.
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[SignalR_Vuejs__Demo.Models.ParseJson, SignalR_Vuejs__Demo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetWindows (SignalR_Vuejs__Demo) in 309.6876ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 353.6972ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/GetWindows?date=03.02.2020  
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[3]
+      Route matched with {action = "GetWindows", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.JsonResult GetWindows(System.String) on controller SignalR_Vuejs__Demo.Controllers.HomeController (SignalR_Vuejs__Demo).
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[1]
+      Executing action method SignalR_Vuejs__Demo.Controllers.HomeController.GetWindows (SignalR_Vuejs__Demo) - Validation state: Valid
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action method SignalR_Vuejs__Demo.Controllers.HomeController.GetWindows (SignalR_Vuejs__Demo), returned result Microsoft.AspNetCore.Mvc.JsonResult in 158.6956ms.
+info: Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor[1]
+      Executing JsonResult, writing value of type 'System.Collections.Generic.List`1[[SignalR_Vuejs__Demo.Models.ParseJson, SignalR_Vuejs__Demo, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+info: Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker[2]
+      Executed action SignalR_Vuejs__Demo.Controllers.HomeController.GetWindows (SignalR_Vuejs__Demo) in 169.6601ms
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 185.5478ms 200 application/json; charset=utf-8
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/chatHub?id=cUaBsaTFLGZz_QyGvngn0g  
+fail: Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionDispatcher[8]
+      Cannot change transports mid-connection; currently using ServerSentEvents, requesting LongPolling.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 19.2912ms 400 text/plain
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/chatHub?id=cUaBsaTFLGZz_QyGvngn0g  
+fail: Microsoft.AspNetCore.Http.Connections.Internal.HttpConnectionDispatcher[8]
+      Cannot change transports mid-connection; currently using ServerSentEvents, requesting LongPolling.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 3.7235ms 400 text/plain
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 GET http://localhost/favicon.ico  
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 6.8003ms 404 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

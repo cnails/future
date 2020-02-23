@@ -1,0 +1,50 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iis": {
+      "applicationUrl": "http://localhost/",
+      "sslPort": 0
+    },
+    "iisExpress": {
+      "applicationUrl": "http://localhost:59837/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "SignalR-Vuejs--Demo": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:59839/"
+    },
+    "LiveReload": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "ClientFileExtensions": ".cshtml,.css,.js,.htm,.html,.ts,.razor,.custom,",
+      "LiveReloadEnabled": true,
+      "ServerRefreshTimeout": 3000,
+      "WebSocketHost": "ws://localhost:3990",
+      "WebSocketUrl": "/__livereload",
+      "FolderToMonitor": "~/wwwroot/"
+    },
+    "IIS": {
+      "commandName": "IIS",
+      "workingDirectory": "C:\\inetpub\\wwwroot\\test",
+      "launchBrowser": true,
+      "ancmHostingModel": "OutOfProcess"
+    }
+  }
+}

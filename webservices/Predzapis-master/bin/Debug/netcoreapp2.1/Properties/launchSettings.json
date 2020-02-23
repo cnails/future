@@ -1,0 +1,42 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:59837/",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "SignalR-Vuejs--Demo": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:59839/"
+    },
+    "LiveReload": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "LiveReloadEnabled": true,
+      "ClientFileExtensions": ".cshtml,.css,.js,.htm,.html,.ts,.razor,.custom,",
+      "ServerRefreshTimeout": 3000,
+      "WebSocketUrl": "/__livereload",
+      "WebSocketHost": "ws://localhost:5000",
+      "FolderToMonitor": "~/wwwroot/",
+      //"applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+
+}

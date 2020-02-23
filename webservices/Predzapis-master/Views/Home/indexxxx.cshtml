@@ -1,0 +1,317 @@
+﻿@{
+    ViewData["Title"] = "My Chat";
+}
+
+<div @*id="chatApp" *@>
+    @*<ul id="example-1">
+        <li v-for="window in windows">
+            {{window.name}}
+            <ul>
+                <li v-for="item in hr">
+                    {{item.name}}---{{item.person}}
+                </li>
+            </ul>
+        </li>
+    </ul>*@
+
+    @*<div>
+        {{window.name}}
+        <form>
+            <div>
+                <label for="userName">Your Name</label>
+                <input type="text" name="Name" id="userName" v-model="userName">
+            </div>
+            <div>
+                <label for="userMessage">Message</label>
+                <input type="text" name="Message" id="userMessage" v-model="userMessage">
+            </div>
+            <button v-on:click="submitCard" type="button">Submit</button>
+        </form>
+        <ul>
+            <li><b>Message: </b>{{messages}}</li>
+        </ul>
+    </div>*@
+    <div id="chatApp">
+        <windows-info v-for="n in windows" v-bind="n"></windows-info>
+    </div>
+
+    <template id="window">
+        <div class="window">
+            <div class="title">{{ name }}</div>
+            <input v-bind:value="person" v-on:change="onChange($event)" />
+        </div>
+    </template>
+
+    @*
+    <template id="hr">
+        <div class="hr">
+            <input type="text" class="title" v-model.lazy="person" v-bind:value.sync="person" v-bind:id="hr, index" />
+
+        </div>
+    </template>*@
+
+    @*
+    <template id="city">
+        <div class="city">
+            <div class="title">{{ city }}</div>
+            <div>{{ coord }}</div>
+        </div>
+    </template>*@
+</div>
+
+<script src="~/signalr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    //function greet(d) {
+
+    //    console.log(d.value);
+    //};
+
+    document.addEventListener("DOMContentLoaded", function (event) {
+
+        Vue.component('windows-info', {
+
+            template: '#window',
+            methods: {
+                onChange: function (event) {
+                    console.log(event)
+
+                }
+            },
+
+            props: [
+                'name',
+                'window',
+                'person'
+            ]
+
+
+
+        });
+
+        //Vue.component('hr-info', {
+
+        //    template: '#hr',
+        //    props: ['name', 'person']
+
+
+        //});
+
+        //Vue.component('city-info', {
+        //    template: '#city',
+        //    props: ['city', 'coord'],
+        //});
+
+        var app = new Vue({
+
+            el: '#chatApp',
+
+            data: {
+                userName: "",
+                userMessage: "",
+                connection: "",
+                windows: [
+
+                    {
+                        window: 'windows 1',
+                        name: "08:30",
+                        person: "Иванов И.И"
+
+                    },
+                    {
+                        window: 'windows 1',
+                        name: "09:00",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 1',
+                        name: "10:00",
+                        person: "Иванов И.И"
+                    },
+                    {
+                        window: 'windows 1',
+                        name: "11:00",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 1',
+                        name: "12:00",
+                        person: "Иванов И.И"
+                    },
+                    {
+                        window: 'windows 1',
+                        name: "13:30",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 1',
+                        name: "14:00",
+                        person: "Иванов И.И"
+                    },
+                    {
+                        window: 'windows 1',
+                        name: "15:00",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 1',
+                        name: "16:00",
+                        person: "Иванов И.И"
+                    },
+                    {
+                        window: 'windows 1',
+                        name: "16:30",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 2',
+                        name: "08:30",
+                        person: "Иванов И.И"
+
+                    },
+                    {
+                        window: 'windows 2',
+                        name: "09:00",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 2',
+                        name: "10:00",
+                        person: "Иванов И.И"
+                    },
+                    {
+                        window: 'windows 2',
+                        name: "11:00",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 2',
+                        name: "12:00",
+                        person: "Иванов И.И"
+                    },
+                    {
+                        window: 'windows 2',
+                        name: "13:30",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 2',
+                        name: "14:00",
+                        person: "Иванов И.И"
+                    },
+                    {
+                        window: 'windows 2',
+                        name: "15:00",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 2',
+                        name: "16:00",
+                        person: "Иванов И.И"
+                    },
+                    {
+                        window: 'windows 2',
+                        name: "16:30",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 3',
+                        name: "08:30",
+                        person: "Иванов И.И"
+
+                    },
+                    {
+                        window: 'windows 3',
+                        name: "09:00",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 3',
+                        name: "10:00",
+                        person: "Иванов И.И"
+                    },
+                    {
+                        window: 'windows 3',
+                        name: "11:00",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 3',
+                        name: "12:00",
+                        person: "Иванов И.И"
+                    },
+                    {
+                        window: 'windows 3',
+                        name: "13:30",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 3',
+                        name: "14:00",
+                        person: "Иванов И.И"
+                    },
+                    {
+                        window: 'windows 3',
+                        name: "15:00",
+                        person: ""
+                    },
+                    {
+                        window: 'windows 3',
+                        name: "16:00",
+                        person: "Иванов И.И"
+                    },
+                    {
+                        window: 'windows 3',
+                        name: "16:30",
+                        person: ""
+                    }
+
+
+                ]
+            },
+
+
+
+
+
+            methods: {
+                submitCard: function () {
+                    if (this.userName && this.userMessage) {
+                        this.connection.invoke('SendMessage', this.userName, this.userMessage).catch(function (err) {
+                            return console.error(err.toSting());
+                        });
+
+                        this.userName = '';
+                        this.userMessage = '';
+                    }
+                },
+                addEvent({ target }) {
+
+
+                },
+                onChange: function (event) {
+                    console.log(event.target.value)
+                }
+            },
+            created: function () {
+                this.connection = new signalR.HubConnectionBuilder()
+                    .withUrl('/chatHub')
+                    .configureLogging(signalR.LogLevel.Information)
+                    .build();
+                this.connection.start().catch(function (err) {
+                    return console.error(err.toSting());
+                });
+            },
+            mounted: function () {
+                var thisVue = this;
+                thisVue.connection.start();
+                thisVue.connection.on('ReceiveMessage', function (user, message) {
+                    //thisVue.messages.$set({ message });
+                    //thisVue.$set(this.someObject, 'messages', { message })
+                    thisVue.messages = message;
+                });
+            }
+
+        });
+    });
+</script>

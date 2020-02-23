@@ -1,0 +1,20 @@
+info: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[0]
+      User profile not available. Using 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\4.0.30319.0\AutoGenKeys\S-1-5-82-3006700770-424185619-1745488364-794895919-4004696415\DataProtection' as key repository and Windows DPAPI to encrypt keys at rest.
+Hosting environment: Production
+Content root path: D:\Projects\????
+Now listening on: http://127.0.0.1:23626
+Application started. Press Ctrl+C to shut down.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost/chatHub?id=EHeXVf3DjWgIyqu2Bg8xTg text/plain;charset=UTF-8 32
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[1]
+      Request starting HTTP/1.1 POST http://localhost/chatHub?id=J8zJZtnRKpp-a271iFn2ig text/plain;charset=UTF-8 32
+warn: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+      Failed to determine the https port for redirect.
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 156.4656ms 404 text/plain
+info: Microsoft.AspNetCore.Hosting.Internal.WebHost[2]
+      Request finished in 157.5209ms 404 text/plain
+info: Microsoft.AspNetCore.Server.Kestrel[32]
+      Connection id "0HLT97B1778ND", Request id "0HLT97B1778ND:00000001": the application completed without reading the entire request body.
+info: Microsoft.AspNetCore.Server.Kestrel[32]
+      Connection id "0HLT97B1778NC", Request id "0HLT97B1778NC:00000001": the application completed without reading the entire request body.

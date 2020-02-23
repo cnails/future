@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "name": "asp.net",
+  "private": true,
+  "devDependencies": {
+    "animate.css": "3.7.2",
+      "fullpage-vue": "1.9.0"
+  }
+}

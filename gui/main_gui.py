@@ -16,16 +16,23 @@ class Files(QtWidgets.QMainWindow, tree_gui.Ui_MainWindow):
         # if 'C:' in directory:
             # name = os.path.basename(directory)
         # name = directory
-        data = {'name': self.directory, 'chat_id': self.parent.chat_id, 'user_id': self.user_id}
+        data = {'name': True, 'chat_id': self.parent.chat_id, 'user_id': self.user_id}
+        # if os.path.exists(self.directory):
         for fil in os.listdir(self.directory):
             if not os.path.isdir(os.path.join(self.directory, fil)):
-                req.get(url, data = {'name': self.pref, 'chat_id': self.parent.chat_id, 'user_id': self.user_id})
+                # print(self.directory)
+                # print(fil)
+                # if not fil in self.directory.split('\\'):
+                    # req.get(url, data = {'name': self.pref, 'chat_id': self.parent.chat_id, 'user_id': self.user_id})
                 with open(os.path.join(self.directory, fil), 'r') as fd:
-                    data[os.path.join(self.pref, fil)] = fd.read()
-            else:
-                self.pref = os.path.join(self.pref, os.path.basename(fil))
-                self.directory = os.path.join(self.directory, fil)
-                self.push_folder()
+                    data[fil] = fd.read()
+                # data['name']
+            # else:
+                # self.pref = os.path.join(self.pref, '')
+            # else:
+                # self.directory = os.path.join(self.directory, os.path.basename(fil))
+            # self.push_folder()
+        # print(data)
         req.post(url, data = data)
         self.make_tree()
 
@@ -33,9 +40,9 @@ class Files(QtWidgets.QMainWindow, tree_gui.Ui_MainWindow):
         self.model = QStandardItemModel()
         self.tree_files.setModel(self.model)
         info = req.get(url, data = {'tree': self.parent.chat_id}).json()
-        self.timer = QtCore.QTimer()
-        self.timer.timeout.connect(self.make_tree)
-        self.timer.start(10000)
+        # self.timer = QtCore.QTimer()
+        # self.timer.timeout.connect(self.make_tree)
+        # self.timer.start(10000)
         if info.get('parent1'):
             for direc in info.get('parent1'):
                 parent1 = QStandardItem(direc)
@@ -132,7 +139,7 @@ class Files(QtWidgets.QMainWindow, tree_gui.Ui_MainWindow):
 
     def go_to_chat(self):
         self.hide()
-        self.timer.stop()
+        # self.timer.stop()
         self.parent.show()
         # self.chats_window.show()
 
@@ -146,7 +153,7 @@ class Files(QtWidgets.QMainWindow, tree_gui.Ui_MainWindow):
 
     def pull_files(self):
         response = req.get(url, data = {'pull_files': self.parent.chat_id}).json()
-        print(response)
+        # print(response)
         for dir in response:
             try:
                 os.mkdir(os.path.join(self.directory, dir))
@@ -155,7 +162,7 @@ class Files(QtWidgets.QMainWindow, tree_gui.Ui_MainWindow):
             info = response.get(dir)
             for file in info:
                 for fil in file:
-                    print(file)
+                    # print(file)
                     with open(os.path.join(self.directory, os.path.join(dir, fil)), 'w') as fd:
                         fd.write(file.get(fil))
         # for dir, file in response.items():
@@ -189,8 +196,8 @@ class Files(QtWidgets.QMainWindow, tree_gui.Ui_MainWindow):
             info = json.load(fd)
         if info.get('dir'):
             self.directory = info.get('dir')
-            self.pref = ''
-            # self.pref = os.path.basename(self.directory)
+            # self.pref = ''
+            self.pref = os.path.basename(self.directory)
             self.lineEdit.setText(info.get('dir'))
         self.make_tree()
         # self.user_0.hide()
@@ -228,7 +235,7 @@ class Files(QtWidgets.QMainWindow, tree_gui.Ui_MainWindow):
         self.select_dir_button.clicked.connect(self.browse_folder)
         self.back_button.clicked.connect(self.go_to_chat)
         self.push_file_button.clicked.connect(self.push_folder)
-        print(self.owner)
+        # print(self.owner)
         if not self.owner and not req.get(url, data = {'check_enable': self.user_id, 'chat_id': self.parent.chat_id}).json():
             self.push_file_button.setEnabled(False)
         self.copy_to_clip_button.clicked.connect(self.copy_link)
@@ -254,6 +261,7 @@ class Chats(QtWidgets.QMainWindow, chats.Ui_MainWindow):
             pass
 
     def append_chat(self):
+        # print('here')
         req.get(url, data = {'append_chat': self.new_chat.toPlainText(), 'user_id': self.user_id})
         self.list_chats.clear()
         self.new_chat.clear()
@@ -275,7 +283,7 @@ class Chats(QtWidgets.QMainWindow, chats.Ui_MainWindow):
         if not reload:
             for index, chat in enumerate(chats):
                 try:
-                    print(f'chat - {chat}, list_chat - {self.list_chats.item(index).text()}')
+                    # print(f'chat - {chat}, list_chat - {self.list_chats.item(index).text()}')
                     if not chat == self.list_chats.item(index).text():
                         self.download_chats(True)
                 except:
@@ -314,6 +322,7 @@ class Chats(QtWidgets.QMainWindow, chats.Ui_MainWindow):
 class ExampleApp(QtWidgets.QMainWindow, gui.Ui_MainWindow):            
     def append_chat(self, chat_id):
         # with open('info.json')
+        # print('here 1')
         req.get(url, data={'append_to_chat': [self.user_id, self.chat_id]})
 
     def send_message(self):
@@ -331,15 +340,18 @@ class ExampleApp(QtWidgets.QMainWindow, gui.Ui_MainWindow):
 
     def append_user_to_chat(self):
         response = req.get(url, data = {'append_user_to_chat': self.invite_to_chat.toPlainText(), 'chat_id': self.chat_id})
-        if not response.json():
-            self.invalid_user = QtWidgets.QLabel(self)
-            self.invalid_user.setText('User not found')
-            self.invalid_user.setObjectName('short_login')
-            self.invalid_user.setGeometry(655, 470, 200, 20)
-            self.invalid_user.show()
-        else:
-            self.invite_to_chat.clear()
-            self.download_users()
+        try:
+            if not response.json():
+                self.invalid_user = QtWidgets.QLabel(self)
+                self.invalid_user.setText('User not found')
+                self.invalid_user.setObjectName('short_login')
+                self.invalid_user.setGeometry(655, 470, 200, 20)
+                self.invalid_user.show()
+            else:
+                self.invite_to_chat.clear()
+                self.download_users()
+        except:
+            pass
 
     def download_users(self):
         self.list_users.clear()

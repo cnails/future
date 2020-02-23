@@ -131,6 +131,10 @@ def append_chat(user_id, chat_id):
         return dumps(False)
     change_user_info(user_id, chat_id=chat_id)
     try:
+        os.mkdir(f'chats/chat_{chat_id}')
+    except:
+        pass
+    try:
         os.mkdir(f'chats/chat_{chat_id}/files')
     except:
         pass
@@ -144,7 +148,10 @@ def append_chat(user_id, chat_id):
         info[chat_id] = [user_id]
     with open(f'chats/members_of_chats.json', 'w') as fd:
         fd.write(dumps(info))
-    os.mkdir(f'chats/chat_{chat_id}')
+    # try:
+        # os.mkdir(f'chats/chat_{chat_id}')
+    # except:
+        # pass
     with open(f'chats/chat_{chat_id}/message.json', 'w') as fd:
         fd.write(dumps({"message": []}))
 
@@ -277,19 +284,21 @@ def return_link(chat_id, filename):
 def download_files(data):
     chat_id = data.get('chat_id')
     user_id = data.get('user_id')
-    with open(f'users/user_{user_id}.json', 'r') as fd:
-        info = json.load(fd)
-        if info.get('telegram_id'):
-            if time.time() - PAUSE >= 3:
-                bot.send_message(int(info.get('telegram_id')), f'ИЗМЕНЕНИЯ ФАЙЛОВ:\n{user_id} только что запушил файлы в "{chat_id}"')
-                PAUSE = time.time()
-    try:
-        os.mkdir(f'chats/chat_{chat_id}/files/{data.get("name")}')
-    except:
-        pass
+    # with open(f'users/user_{user_id}.json', 'r') as fd:
+    #     info = json.load(fd)
+    #     if info.get('telegram_id'):
+    #         if time.time() - PAUSE >= 3:
+    #             bot.send_message(int(info.get('telegram_id')), f'ИЗМЕНЕНИЯ ФАЙЛОВ:\n{user_id} только что запушил файлы в "{chat_id}"')
+    #             PAUSE = time.time()
+    # try:
+        # os.mkdir(f'chats/chat_{chat_id}/files/{data.get("name")}')
+    # except:
+        # pass
+    # print(data)
     for fil, content in data.items():
         if fil == 'name' or fil == 'chat_id':
             continue
+        # print(f'chats/chat_{chat_id}/files/{fil}')
         with open(f'chats/chat_{chat_id}/files/{fil}', 'w') as fd:
             fd.write(content)
 

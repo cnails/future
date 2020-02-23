@@ -1,5 +1,0 @@
-"""
-yeah
-not ez
-work
-"""
